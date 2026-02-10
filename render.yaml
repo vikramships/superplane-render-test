@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: superplane-render-test
+    env: static
+    buildCommand: echo "Build complete"
+    staticPublishPath: .
+    envVars:
+      - key: TEST_ENV_VAR
+        value: hello_from_superplane
