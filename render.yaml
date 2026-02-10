@@ -2,7 +2,7 @@ services:
   - type: web
     name: superplane-render-test
     env: static
-    buildCommand: echo "Build complete"
+    buildCommand: echo "Starting build..." && sleep 45 && echo "Build complete"
     staticPublishPath: .
     envVars:
       - key: TEST_ENV_VAR
